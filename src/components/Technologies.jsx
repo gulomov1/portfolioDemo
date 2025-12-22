@@ -1,5 +1,6 @@
 import React from "react";
 import { RiNextjsLine, RiReactjsLine, RiTailwindCssFill } from "react-icons/ri";
+import { SiStrapi } from "react-icons/si";
 import { FaHtml5, FaCss3 } from "react-icons/fa";
 import { AiOutlineJavaScript } from "react-icons/ai";
 import { TbBrandTypescript } from "react-icons/tb";
@@ -81,12 +82,30 @@ const Technologies = () => {
         >
           <RiReactjsLine className="text-7xl text-cyan-400" />
         </motion.div>
+
         <motion.div
           initial="initial"
           animate="animate"
           variants={iconVariants(6)}
         >
           <RiNextjsLine className="text-7xl text-white" />
+        </motion.div>
+
+        <motion.div
+          initial="initial"
+          animate="animate"
+          variants={iconVariants(1.5)}
+        >
+          <img src="/astro.svg" className="w-17 h-17 text-white" />
+        </motion.div>
+        <motion.div
+          initial="initial"
+          animate="animate"
+          variants={iconVariants(4)}
+        >
+          <div className="bg-[#4945FF] rounded-2xl">
+            <SiStrapi className="text-7xl text-white" />
+          </div>
         </motion.div>
       </motion.div>
     </div>
